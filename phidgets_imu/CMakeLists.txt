@@ -3,7 +3,8 @@ project(phidgets_imu)
 
 find_package(catkin REQUIRED COMPONENTS diagnostic_msgs diagnostic_updater nodelet pluginlib phidgets_api roscpp roslaunch sensor_msgs std_msgs std_srvs tf)
 
-find_package(Boost REQUIRED COMPONENTS thread)
+#find_package(Boost REQUIRED COMPONENTS thread)
+find_package(Boost REQUIRED COMPONENTS system)
 
 catkin_package(
   INCLUDE_DIRS include
